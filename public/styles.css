@@ -1,0 +1,30 @@
+:root {
+  --ink: #1c2430;
+  --muted: #5d6b7a;
+  --paper: #f4f1ea;
+  --rule: #d9d3c7;
+  --navy: #1e3a5f;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Iowan Old Style", Georgia, serif; }
+.shell { max-width: 860px; margin: 0 auto; padding: 24px 20px 64px; }
+.top { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--rule); padding-bottom: 14px; }
+.brand { display: flex; gap: 12px; align-items: center; }
+.mark { width: 40px; height: 40px; display: grid; place-items: center; background: var(--navy); color: #fff; font-family: "Avenir Next", sans-serif; font-weight: 700; }
+.brand em { display: block; font-style: normal; color: var(--muted); font-size: 0.85rem; }
+nav { display: flex; gap: 12px; align-items: center; font-family: "Avenir Next", sans-serif; }
+button { font-family: "Avenir Next", sans-serif; background: var(--navy); color: #fff; border: 0; padding: 8px 12px; cursor: pointer; }
+h1 { font-weight: 500; font-size: clamp(1.8rem, 4vw, 2.6rem); }
+.lede { color: var(--muted); }
+.narrow { max-width: 420px; padding-top: 24px; }
+.stack { display: grid; gap: 12px; }
+.stack label { display: grid; gap: 4px; }
+.stack span { font-family: "Avenir Next", sans-serif; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+input { font: inherit; padding: 10px 12px; border: 1px solid var(--rule); background: #fff; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid var(--rule); }
+th { font-family: "Avenir Next", sans-serif; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.card { border: 1px solid var(--rule); background: #fff; padding: 14px; margin: 12px 0; }
+.note { border: 1px solid var(--navy); background: #eef3f8; padding: 12px; }
+.flash { background: #f3d9d2; padding: 10px 12px; }
+footer { margin-top: 40px; color: var(--muted); }
